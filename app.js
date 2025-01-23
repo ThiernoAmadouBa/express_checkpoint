@@ -27,15 +27,15 @@ app.use(checkWorkingHours);
 
 // Routes
 app.get('/', (req, res) => {
-  res.render('./views/Accueil', { title: 'Accueil' });
+  res.render('Accueil', { title: 'Accueil' });
 });
 
 app.get('/services', (req, res) => {
-  res.render('./views/service', { title: 'Nos Services' });
+  res.render('service', { title: 'Nos Services' });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('./views/contact', { title: 'Nous Contacter' });
+  res.render('contact', { title: 'Nous Contacter' });
 });
 
 // Démarrer le serveur
